@@ -8116,7 +8116,7 @@ button:hover,
 /*google maps responsive*/
 .map-responsive {
   overflow: hidden;
-  padding-bottom: 56.25%; /* aspect ratio */
+  padding-bottom: 61.5%; /* aspect ratio */
   position: relative;
   height: 0;
 }
@@ -8126,4 +8126,45 @@ button:hover,
   height: 100% !important;
   width: 100% !important;
   position: absolute;
+}
+
+
+/* ----- CUSTOM MEDIA QUERIES -- */
+
+@media (min-width: 1263px) and (max-width: 1439px) {
+	.map-responsive {
+		padding-bottom: 69%;
+	}
+}
+
+@media (min-width: 1136px) and (max-width: 1262px) {
+	.map-responsive {
+		padding-bottom: 82%;
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1135px) {
+	.map-responsive {
+		padding-bottom: 91%;
+	}
+}
+
+@media (min-width: 960px) and (max-width: 1023px) {
+	.map-responsive {
+		padding-bottom: 97%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 959px) {
+	.sc_googlemap_container {
+		position: static;
+		width: 100%;
+	}
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+	.sc_googlemap_container {
+		position: static;
+		width: 100%;
+	}
 }
